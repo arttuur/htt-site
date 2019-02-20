@@ -1,0 +1,294 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none; list-style: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*CORPO PRINCIPAL DO SITE*/
+#main-body{
+    position: absolute;
+    width: 100%; height: auto;
+    background: transparent;
+}
+
+/*MENU DO SITE*/
+#menu-body{
+    position: fixed;
+    width: 100%; height: 80px;
+    z-index: 1;
+}
+.menu{
+    position: absolute;
+    width: 100%; height: 100%;
+    text-align: center;
+    margin-top: 28px;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+}
+.menu a{
+    font-size: 17px;
+    color: #dfe6e9;
+    font-family: 'Open Sans Semi-Bold', sans-serif;
+    margin-left: 10px; margin-right: 10px; 
+    padding-bottom: 10px;
+    transition: .5s;
+}
+.menu a:hover{
+    color: white;
+    transition: .5s;
+}
+
+/*"PEITO DO SITE"*/
+#header{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 80px;
+}
+.logo{
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.logo h1{
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: white;
+}
+.logo h2{
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 19px;
+    color: white;
+}
+#download-btn{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    font-family: 'Open Sans Semi-Bold', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #1dd1a1;
+    border-radius: 10px;
+    top: 50%;
+    left: 58%;
+    margin-left: 10px;
+    transform: translate(-50%, -50%);
+    transition: .2s;
+}
+#download-btn:hover{
+    background-color: #10ac84;
+    transition: .2s;
+}
+#about-btn{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    font-family: 'Open Sans Semi-Bold', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #3498db;
+    border-radius: 10px;
+    top: 50%;
+    left: 26%;
+    margin-right: 10px;
+    transform: translate(-50%, -50%);
+    transition: .2s;
+}
+#about-btn:hover{
+    background-color: #2980b9;
+    transition: .2s;
+}
+
+/*PARTE: QUEM SOMOS DO SITE*/
+#about-box{
+    position: absolute;
+    width: 100%; height: 500px;
+    top: 780px;
+}
+.text-about{
+    position: relative;
+    width: 800px;
+    height: 300px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+.text-about h1{
+    color: #2d3436;
+    font-family: 'Open Sans Semi-Bold', sans-serif;
+    border-left: 5px solid #2d3436;
+    padding-left: 5px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.text-about p{
+    font-family: 'Open Sans', sans-serif;
+    color: #2d3436;
+    font-size: 18px;
+}
+
+/*PARTE: DONLOAD, PRODUTO*/
+#download-box{
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    top: 1280px;
+    background: white;
+}
+.text-download{
+    position: absolute;
+    width: 800px; height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-download h1{
+    color: #2d3436;
+    font-family: 'Open Sans Semi-Bold', sans-serif;
+    padding-left: 5px;
+    font-size: 25px;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    display: block;
+}
+.text-download h1::after{
+    content: '';
+    width: 0px;
+    display: block;
+    margin: 0 auto;
+    height: 4px;
+    background: currentColor;
+    margin-top: 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.text-download h1:hover::after{
+    width: 110px;
+    transition: .5s;
+}
+.text-download ul li{
+    display: inline-block;
+}
+.text-download ul{
+    padding: 0;
+}
+.text-download i{
+    font-size: 22px;
+    color: #2e86de;
+    padding-top: 25%;
+    padding-left: 40px;
+}
+.text-download a{
+    font-family: 'Open Sans Semi-Bold', sans-serif;
+    font-size: 22px;
+    color: #2d3436;
+    transition: .5s;
+    margin: -20px 20px auto 5px;
+}
+.text-download a:hover{
+    color: #2e86de;
+    transition: .5s;
+}
+
+/*PARTE: CONTATO*/
+#contact-box{
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    top: 1560px;
+}
+#contact-box h1{
+    color: white;
+    font-family: 'Open Sans Semi-Bold', sans-serif;
+    font-size: 25px;
+    margin-bottom: 40px;
+    margin-top: 28px;
+}
+#contact-box h1::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 4px;
+    margin: 0 auto;
+    background: currentColor;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: .5s;
+}
+#contact-box h1:hover::after{
+    width: 200px;
+    transition: .5s;
+}
+.icons-social{
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: transparent;
+}
+#contact-box ul li{
+    display: inline-block;
+}
+#contact-box ul{
+    padding: 0;
+}
+#contact-box a{
+    color: white;
+    font-size: 40px;
+    padding-left: 20px; padding-right: 20px;
+    padding-top: 0;
+}
+#contact-box a:hover{
+    color: #dfe6e9;
+    transition: .5s;
+}
+
+/*PARTE RODAPÉ DO SITE*/
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: white;
+    top: 1840px;
+}
+#footer h1{
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 12px;
+    color: #2d3436;
+    text-align: center;
+    margin-top: 12px;
+}
+#footer a{
+    color: #2d3436;
+}
+#footer a:hover{
+    color: #2980b9;
+    transition: .5s;
+}
